@@ -1,0 +1,95 @@
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+body{
+    background: var(--violet) url(../images/bg-desktop.svg) center / cover no-repeat;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho{
+    padding: 30px 30px;
+    flex-grow: 1;
+}
+
+.cabecalho .logo{
+    width: 30%;
+    max-width: 270px;
+    min-width: 170px;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 20px;
+    flex-grow: 2;
+}
+
+main .illustration{
+    width: 45%;
+    height: min-content;
+    align-self: center;
+    max-width: 800px;
+}
+
+main .texto-convite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    gap: 30px;
+    color: aliceblue;
+    max-width: 600px;
+}
+
+main .texto-convite h1{
+    font-weight: 600;
+}
+
+main .texto-convite p{
+    font-weight: 100;
+}
+
+main .texto-convite .botão{
+    width: 160px;
+    padding: 14px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 2px 2px 7px 1px rgb(49, 47, 47) ;
+    color: var(--violet);
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+main .texto-convite .botão:hover{
+    background-color: var(--soft-magenta);
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.rodape{
+    flex-grow: 1;
+}
+
+.redes-sociais{
+    justify-self: end;
+    margin-right: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.redes-sociais a i{
+    border: 1px solid aliceblue;
+    padding: 10px;
+    border-radius: 50%;
+    color: aliceblue;
+}
+
+.redes-sociais a i:hover{
+    color: var(--soft-magenta);
+    border: 1px solid var(--soft-magenta);
+}
