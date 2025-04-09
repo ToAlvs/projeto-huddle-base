@@ -80,6 +80,9 @@ main .texto-convite .botão:hover{
     margin-right: 50px;
     display: flex;
     gap: 20px;
+    li{
+        list-style: none;
+    }
 }
 
 .redes-sociais a i{
